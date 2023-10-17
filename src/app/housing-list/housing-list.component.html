@@ -1,1 +1,8 @@
-<p>housing-list works!</p>
+<label for="location-search">Search for a new place</label>
+<input id="location-search" #search placeholder="Ex: Colombo">
+<button (click)="searchHousingLocation(search.value)">Search</button>
+ <article *ngFor="let location of results">
+    <p>{{location.name}}</p>
+    <p>{{location.city}}, {{location.state}}</p>
+    <button (click)="selectHousingLocation(location)">View</button>
+</article>

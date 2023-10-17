@@ -1,0 +1,19 @@
+input, button {
+    border: solid .5px #55586E;
+    border-radius: 2px;
+}
+
+input, button {
+    display: inline-block;
+    height: 40px;
+}
+input {
+    margin: 0 5px 0 2px;
+    width: 400px;
+    padding-left: 8px;
+}
+
+button {
+    height: 43px;
+    width: 70px;
+}
